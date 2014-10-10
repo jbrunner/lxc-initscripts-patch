@@ -17,5 +17,5 @@ The script applies the patch from the centos template again.
 
     yum install rpm-build
     mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
-    rpmbuild -bb
+    rpmbuild -bb lxc-initscripts-patch.spec
     sudo rpm -Uvh ~/rpmbuild/RPMS/noarch/lxc-initscripts-patch-1.0.0-1.noarch
